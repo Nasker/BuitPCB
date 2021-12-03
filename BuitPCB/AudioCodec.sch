@@ -1,0 +1,234 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 4 5
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Audio:SGTL5000XNAA3 U4
+U 1 1 61A9E27D
+P 5700 3400
+F 0 "U4" H 5250 4700 50  0000 C CNN
+F 1 "SGTL5000XNAA3" V 5750 3450 50  0000 C CNN
+F 2 "Package_DFN_QFN:QFN-32-1EP_5x5mm_P0.5mm_EP3.6x3.6mm" H 5700 3400 50  0001 C CNN
+F 3 "https://www.nxp.com/docs/en/data-sheet/SGTL5000.pdf" H 5700 3400 50  0001 C CNN
+	1    5700 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Regulator_Linear:AP7361C-33E U3
+U 1 1 61A9F535
+P 2650 2250
+F 0 "U3" H 2650 2492 50  0000 C CNN
+F 1 "AP7361C-33E" H 2650 2401 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-223-3_TabPin2" H 2650 2475 50  0001 C CIN
+F 3 "https://www.diodes.com/assets/Datasheets/AP7361C.pdf" H 2650 2200 50  0001 C CNN
+	1    2650 2250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:AudioJack3 J4
+U 1 1 61B3378E
+P 8600 2600
+F 0 "J4" H 8320 2533 50  0000 R CNN
+F 1 "AudioJack3" H 8320 2624 50  0000 R CNN
+F 2 "MiniJackConnector:MJ4435" H 8600 2600 50  0001 C CNN
+F 3 "~" H 8600 2600 50  0001 C CNN
+	1    8600 2600
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:+3V3 #PWR06
+U 1 1 61B33FBF
+P 2200 2250
+F 0 "#PWR06" H 2200 2100 50  0001 C CNN
+F 1 "+3V3" H 2215 2423 50  0000 C CNN
+F 2 "" H 2200 2250 50  0001 C CNN
+F 3 "" H 2200 2250 50  0001 C CNN
+	1    2200 2250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C4
+U 1 1 61B349B7
+P 6800 2250
+F 0 "C4" H 6915 2296 50  0000 L CNN
+F 1 "100nF" H 6915 2205 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 6838 2100 50  0001 C CNN
+F 3 "~" H 6800 2250 50  0001 C CNN
+	1    6800 2250
+	1    0    0    -1  
+$EndComp
+Text GLabel 5100 4100 0    50   Input ~ 0
+I2C_SDA_3V3
+Text GLabel 5100 4200 0    50   Input ~ 0
+I2C_SCL_3V3
+$Comp
+L power:GND #PWR010
+U 1 1 61B368A1
+P 5000 4400
+F 0 "#PWR010" H 5000 4150 50  0001 C CNN
+F 1 "GND" H 5005 4227 50  0000 C CNN
+F 2 "" H 5000 4400 50  0001 C CNN
+F 3 "" H 5000 4400 50  0001 C CNN
+	1    5000 4400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5100 4400 5000 4400
+Wire Wire Line
+	5000 4400 5000 4300
+Wire Wire Line
+	5000 4300 5100 4300
+Connection ~ 5000 4400
+$Comp
+L power:GND #PWR011
+U 1 1 61B37688
+P 5850 4700
+F 0 "#PWR011" H 5850 4450 50  0001 C CNN
+F 1 "GND" H 5855 4527 50  0000 C CNN
+F 2 "" H 5850 4700 50  0001 C CNN
+F 3 "" H 5850 4700 50  0001 C CNN
+	1    5850 4700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6000 4700 5850 4700
+Connection ~ 5850 4700
+Wire Wire Line
+	5850 4700 5700 4700
+$Comp
+L power:GND #PWR012
+U 1 1 61B38B7F
+P 8400 2700
+F 0 "#PWR012" H 8400 2450 50  0001 C CNN
+F 1 "GND" V 8405 2572 50  0000 R CNN
+F 2 "" H 8400 2700 50  0001 C CNN
+F 3 "" H 8400 2700 50  0001 C CNN
+	1    8400 2700
+	0    1    1    0   
+$EndComp
+Text GLabel 8400 2500 0    50   Input ~ 0
+LINE_IN_L
+Text GLabel 8400 2600 0    50   Input ~ 0
+LINE_IN_R
+Text GLabel 8400 3700 0    50   Input ~ 0
+HP_L
+Text GLabel 8400 3800 0    50   Input ~ 0
+HP_R
+$Comp
+L Connector:AudioJack3 J6
+U 1 1 61AA0A7A
+P 8600 3800
+F 0 "J6" H 8320 3733 50  0000 R CNN
+F 1 "AudioJack3" H 8320 3824 50  0000 R CNN
+F 2 "MiniJackConnector:MJ4435" H 8600 3800 50  0001 C CNN
+F 3 "~" H 8600 3800 50  0001 C CNN
+	1    8600 3800
+	-1   0    0    1   
+$EndComp
+Text GLabel 8400 3900 0    50   Input ~ 0
+HP_GND
+Text GLabel 6300 3300 2    50   Input ~ 0
+HP_L
+Text GLabel 6300 3100 2    50   Input ~ 0
+HP_R
+Text GLabel 6300 3200 2    50   Input ~ 0
+HP_GND
+Text GLabel 5100 2700 0    50   Input ~ 0
+LINE_IN_L
+Text GLabel 5100 2600 0    50   Input ~ 0
+LINE_IN_R
+Text GLabel 6300 2700 2    50   Input ~ 0
+LINE_OUT_L
+Text GLabel 6300 2600 2    50   Input ~ 0
+LINE_OUT_R
+Text GLabel 3650 2250 2    50   Input ~ 0
+VDDA
+Text GLabel 6000 2100 1    50   Input ~ 0
+VDDA
+Wire Wire Line
+	2350 2250 2200 2250
+$Comp
+L Device:C C2
+U 1 1 61B3D67F
+P 3050 2400
+F 0 "C2" H 3165 2446 50  0000 L CNN
+F 1 "100nF" H 3165 2355 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 3088 2250 50  0001 C CNN
+F 3 "~" H 3050 2400 50  0001 C CNN
+	1    3050 2400
+	1    0    0    -1  
+$EndComp
+Connection ~ 3050 2250
+Wire Wire Line
+	3050 2250 2950 2250
+Wire Wire Line
+	3050 2250 3550 2250
+$Comp
+L Device:C C3
+U 1 1 61B3E698
+P 3550 2400
+F 0 "C3" H 3665 2446 50  0000 L CNN
+F 1 "100nF" H 3665 2355 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 3588 2250 50  0001 C CNN
+F 3 "~" H 3550 2400 50  0001 C CNN
+	1    3550 2400
+	1    0    0    -1  
+$EndComp
+Connection ~ 3550 2250
+Wire Wire Line
+	3550 2250 3650 2250
+$Comp
+L power:GND #PWR07
+U 1 1 61B3EB01
+P 2650 2550
+F 0 "#PWR07" H 2650 2300 50  0001 C CNN
+F 1 "GND" H 2655 2377 50  0000 C CNN
+F 2 "" H 2650 2550 50  0001 C CNN
+F 3 "" H 2650 2550 50  0001 C CNN
+	1    2650 2550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR08
+U 1 1 61B3EFF9
+P 3050 2550
+F 0 "#PWR08" H 3050 2300 50  0001 C CNN
+F 1 "GND" H 3055 2377 50  0000 C CNN
+F 2 "" H 3050 2550 50  0001 C CNN
+F 3 "" H 3050 2550 50  0001 C CNN
+	1    3050 2550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR09
+U 1 1 61B3F13A
+P 3550 2550
+F 0 "#PWR09" H 3550 2300 50  0001 C CNN
+F 1 "GND" H 3555 2377 50  0000 C CNN
+F 2 "" H 3550 2550 50  0001 C CNN
+F 3 "" H 3550 2550 50  0001 C CNN
+	1    3550 2550
+	1    0    0    -1  
+$EndComp
+Text GLabel 5100 3400 0    50   Input ~ 0
+I2S_MCLK
+Text GLabel 5100 3600 0    50   Input ~ 0
+I2S_LRCLK
+Text GLabel 5100 3800 0    50   Input ~ 0
+I2S_DOUT
+Text GLabel 5100 3900 0    50   Input ~ 0
+I2S_DIN
+Text GLabel 5100 3700 0    50   Input ~ 0
+I2S_SCLK
+$EndSCHEMATC

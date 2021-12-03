@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 4
+Sheet 1 5
 Title ""
 Date ""
 Rev ""
@@ -20,15 +20,21 @@ F0 "DevBoard" 50
 F1 "DevBoard.sch" 50
 $EndSheet
 $Sheet
-S 8100 1400 2150 1900
-U 61A97DFC
-F0 "Connectivity" 50
-F1 "Connectivity.sch" 50
+S 8200 1500 2150 1750
+U 61AA26AB
+F0 "MIDI&USBhost." 50
+F1 "MIDI&USBhost.sch" 50
 $EndSheet
 $Sheet
-S 8050 3900 2150 1750
-U 61AA26AB
-F0 "MIDI" 50
-F1 "MIDI.sch" 50
+S 1500 2750 2000 1700
+U 61A9E0C1
+F0 "AudioCodec" 50
+F1 "AudioCodec.sch" 50
+$EndSheet
+$Sheet
+S 8200 4100 2050 1550
+U 61AA2264
+F0 "i2cBus&SPI" 50
+F1 "i2cBus&SPI.sch" 50
 $EndSheet
 $EndSCHEMATC
