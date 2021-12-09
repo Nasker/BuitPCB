@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 2 5
+Sheet 2 6
 Title ""
 Date ""
 Rev ""
@@ -42,7 +42,7 @@ L power:GND #PWR0102
 U 1 1 61A9CF3F
 P 6050 5300
 F 0 "#PWR0102" H 6050 5050 50  0001 C CNN
-F 1 "GND" H 6055 5127 50  0000 C CNN
+F 1 "GND" V 6050 5100 50  0000 C CNN
 F 2 "" H 6050 5300 50  0001 C CNN
 F 3 "" H 6050 5300 50  0001 C CNN
 	1    6050 5300
@@ -103,4 +103,50 @@ F 3 "" H 7150 4500 50  0001 C CNN
 	1    7150 4500
 	0    -1   -1   0   
 $EndComp
+Text GLabel 4950 4800 0    50   Input ~ 0
+USB_HOST_D+
+Text GLabel 4950 4700 0    50   Input ~ 0
+USB_HOST_D-
+$Comp
+L power:+3V3 #PWR0108
+U 1 1 61AB5F49
+P 4950 3250
+F 0 "#PWR0108" H 4950 3100 50  0001 C CNN
+F 1 "+3V3" V 4965 3378 50  0000 L CNN
+F 2 "" H 4950 3250 50  0001 C CNN
+F 3 "" H 4950 3250 50  0001 C CNN
+	1    4950 3250
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:+3V3 #PWR0109
+U 1 1 61AB6DCC
+P 5900 5300
+F 0 "#PWR0109" H 5900 5150 50  0001 C CNN
+F 1 "+3V3" V 5900 5550 50  0000 C CNN
+F 2 "" H 5900 5300 50  0001 C CNN
+F 3 "" H 5900 5300 50  0001 C CNN
+	1    5900 5300
+	-1   0    0    1   
+$EndComp
+Text GLabel 4950 4600 0    50   Input ~ 0
+USB_HOST_5V
+Text GLabel 7150 2650 2    50   Input ~ 0
+I2C_SDA_3V3
+Text GLabel 7150 2550 2    50   Input ~ 0
+I2C_SCL_3V3
+Text GLabel 7150 2150 2    50   Input ~ 0
+I2S_MCLK
+Text GLabel 7150 2450 2    50   Input ~ 0
+I2S_LRCLK
+Text GLabel 4950 2750 0    50   Input ~ 0
+I2S_DOUT
+Text GLabel 4950 2650 0    50   Input ~ 0
+I2S_DIN
+Text GLabel 7150 2350 2    50   Input ~ 0
+I2S_SCLK
+Text GLabel 4950 1950 0    50   Input ~ 0
+MIDI_IN
+Text GLabel 4950 2050 0    50   Input ~ 0
+MIDI_OUT
 $EndSCHEMATC

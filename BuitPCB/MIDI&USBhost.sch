@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 3 5
+Sheet 3 6
 Title ""
 Date ""
 Rev ""
@@ -202,7 +202,7 @@ F 3 "" H 6700 4400 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Text GLabel 6700 4800 2    50   Input ~ 0
-MIDI_IN
+MIDI_OUT
 Wire Wire Line
 	6700 4400 6700 4450
 Wire Wire Line
@@ -212,15 +212,15 @@ Wire Wire Line
 $Comp
 L Connector:USB_A J?
 U 1 1 61B32646
-P 9000 3700
+P 9000 3600
 AR Path="/61B32646" Ref="J?"  Part="1" 
 AR Path="/61A97DFC/61B32646" Ref="J?"  Part="1" 
 AR Path="/61AA26AB/61B32646" Ref="J3"  Part="1" 
-F 0 "J3" H 9057 4167 50  0000 C CNN
-F 1 "USB_A" H 9057 4076 50  0000 C CNN
-F 2 "Connector_USB:USB_A_Stewart_SS-52100-001_Horizontal" H 9150 3650 50  0001 C CNN
-F 3 " ~" H 9150 3650 50  0001 C CNN
-	1    9000 3700
+F 0 "J3" H 9057 4067 50  0000 C CNN
+F 1 "USB_A" H 9057 3976 50  0000 C CNN
+F 2 "Connector_USB:USB_A_Stewart_SS-52100-001_Horizontal" H 9150 3550 50  0001 C CNN
+F 3 " ~" H 9150 3550 50  0001 C CNN
+	1    9000 3600
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -236,4 +236,13 @@ F 3 "" H 9000 4100 50  0001 C CNN
 	1    9000 4100
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	8900 4000 9000 4000
+Wire Wire Line
+	9000 4000 9000 4100
+Connection ~ 9000 4000
+Text GLabel 9300 3600 2    50   Input ~ 0
+USB_HOST_D+
+Text GLabel 9300 3700 2    50   Input ~ 0
+USB_HOST_D-
 $EndSCHEMATC
