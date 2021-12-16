@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 4 6
+Sheet 3 7
 Title ""
 Date ""
 Rev ""
@@ -30,7 +30,7 @@ U 1 1 61A9F535
 P 2650 2250
 F 0 "U3" H 2650 2492 50  0000 C CNN
 F 1 "AP7361C-33E" H 2650 2401 50  0000 C CNN
-F 2 "Package_TO_SOT_SMD:SOT-223-3_TabPin2" H 2650 2475 50  0001 C CIN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 2650 2475 50  0001 C CIN
 F 3 "https://www.diodes.com/assets/Datasheets/AP7361C.pdf" H 2650 2200 50  0001 C CNN
 	1    2650 2250
 	1    0    0    -1  
