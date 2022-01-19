@@ -1,0 +1,92 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 6 7
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Connector_Generic:Conn_01x05 J12
+U 1 1 61AC9BB1
+P 6800 4200
+F 0 "J12" H 6880 4192 50  0000 L CNN
+F 1 "NEO TRELLIS" H 6880 4101 50  0000 L CNN
+F 2 "Connector_JST:JST_XH_B5B-XH-A_1x05_P2.50mm_Vertical" H 6800 4200 50  0001 C CNN
+F 3 "~" H 6800 4200 50  0001 C CNN
+	1    6800 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR028
+U 1 1 61AC9BAB
+P 6600 4100
+F 0 "#PWR028" H 6600 3950 50  0001 C CNN
+F 1 "+3V3" V 6600 4350 50  0000 C CNN
+F 2 "" H 6600 4100 50  0001 C CNN
+F 3 "" H 6600 4100 50  0001 C CNN
+	1    6600 4100
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR029
+U 1 1 61AC9BA5
+P 6600 4200
+F 0 "#PWR029" H 6600 3950 50  0001 C CNN
+F 1 "GND" V 6600 4000 50  0000 C CNN
+F 2 "" H 6600 4200 50  0001 C CNN
+F 3 "" H 6600 4200 50  0001 C CNN
+	1    6600 4200
+	0    1    1    0   
+$EndComp
+Text GLabel 6600 4300 0    50   Input ~ 0
+I2C_SCL_3V3
+Text GLabel 6600 4400 0    50   Input ~ 0
+I2C_SDA_3V3
+$Comp
+L Connector_Generic:Conn_01x04 J11
+U 1 1 61AB6F6F
+P 6800 3300
+F 0 "J11" H 6880 3292 50  0000 L CNN
+F 1 "OLED DISPLAY" H 6880 3201 50  0000 L CNN
+F 2 "Connector_JST:JST_XH_B4B-XH-A_1x04_P2.50mm_Vertical" H 6800 3300 50  0001 C CNN
+F 3 "~" H 6800 3300 50  0001 C CNN
+	1    6800 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR026
+U 1 1 61AC5BF1
+P 6600 3200
+F 0 "#PWR026" H 6600 3050 50  0001 C CNN
+F 1 "+3V3" H 6615 3373 50  0000 C CNN
+F 2 "" H 6600 3200 50  0001 C CNN
+F 3 "" H 6600 3200 50  0001 C CNN
+	1    6600 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR027
+U 1 1 61AC63B7
+P 6600 3500
+F 0 "#PWR027" H 6600 3250 50  0001 C CNN
+F 1 "GND" H 6605 3327 50  0000 C CNN
+F 2 "" H 6600 3500 50  0001 C CNN
+F 3 "" H 6600 3500 50  0001 C CNN
+	1    6600 3500
+	1    0    0    -1  
+$EndComp
+Text GLabel 6600 3300 0    50   Input ~ 0
+I2C_SCL_3V3
+Text GLabel 6600 3400 0    50   Input ~ 0
+I2C_SDA_3V3
+Text GLabel 6600 4000 0    50   Input ~ 0
+TRELLIS_INT_PIN
+$EndSCHEMATC

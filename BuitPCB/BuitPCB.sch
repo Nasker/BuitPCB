@@ -40,8 +40,8 @@ $EndSheet
 $Sheet
 S 8150 950  2050 1400
 U 61AA2264
-F0 "i2cBus&SPI" 50
-F1 "i2cBus&SPI.sch" 50
+F0 "i2cBus&Conn" 50
+F1 "i2cBu&Conn.sch" 50
 $EndSheet
 $Sheet
 S 1300 4000 2000 1700
