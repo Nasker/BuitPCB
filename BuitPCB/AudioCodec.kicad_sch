@@ -1227,7 +1227,7 @@
     (pin "2" (uuid b7f1721d-013d-40e0-aec0-43c8652d84c9))
   )
 
-  (symbol (lib_id "Connector_Generic:Conn_01x02") (at 240.03 127 0)
+  (symbol (lib_id "Connector_Generic:Conn_01x02") (at 240.03 127 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-000061ea1223)
     (property "Reference" "J8" (id 0) (at 242.062 127.2032 0)
@@ -1284,7 +1284,7 @@
     (pin "2" (uuid e2a03a73-829c-4f03-a5bf-cb8adbf0b991))
   )
 
-  (symbol (lib_id "Device:R") (at 224.79 127 90)
+  (symbol (lib_id "Device:R") (at 224.79 127 90) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-000061ea3c8f)
     (property "Reference" "R14" (id 0) (at 224.79 121.92 90)
