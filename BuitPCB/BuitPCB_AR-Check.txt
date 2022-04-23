@@ -1,0 +1,19 @@
+AR checking written on:
+'C:\Users\xamps\Documents\Electronics\OWN STUFF\BuitPCB\BuitPCB\BuitPCB_AR-Check.txt'
+'action_menu_annular_check.py'
+version = 1.7.2
+Testing PCB for Annular Rings
+TH Pads >= 0.125 Vias >= 0.125
+PHD margin on PTH = 0
+
+VIAS that Pass = 32; Fails = 0
+AR PTH violation of 0.0 at XY 179.0,55.5
+AR PTH violation of 0.0 at XY 179.0,61.5
+AR PTH violation of 0.062 at XY 118.03,53.535
+AR PTH violation of 0.062 at XY 108.03,53.535
+AR PTH violation of 0.062 at XY 133.43,53.535
+AR PTH violation of 0.062 at XY 143.43,53.535
+AR PTH violation of 0.0 at XY 193.0,61.5
+AR PTH violation of 0.0 at XY 193.0,55.5
+TH PADS that Pass = 121; Fails = 8
+NPTH PADS that Pass = 0; Fails = 0
